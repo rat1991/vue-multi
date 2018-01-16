@@ -1,0 +1,41 @@
+//图片
+//@name profile
+// --------------------------------
+
+@mixin profile($size, $radius:0){
+  width: torem($size);
+  height: torem($size);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: $radius;
+  >img{
+    display: block;
+    width: 100%;
+    height: auto;
+    &[src=""]{
+      display: none;
+    }
+  }
+}
+
+@mixin imgResponsive($w, $h, $radius:0, $overflow:hidden) {
+  width: torem($w);
+  height: torem($h);
+  border-radius: $radius;
+  overflow: $overflow;
+  >img{
+    display: block;
+    @if $w >= $h {
+      width: 100%;
+      height: auto;
+    }
+    @else if $direction == top {
+      width: auto;
+      height: 100%;
+    }
+    &[src=""]{
+      display: none;
+    }
+  }
+}

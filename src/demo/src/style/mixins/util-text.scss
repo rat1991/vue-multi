@@ -1,0 +1,17 @@
+//文字省略
+//@name text ellipsis
+// --------------------------------
+@mixin ellipsis($line: 1) {
+  @if $line==1 {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+  }
+  @else {
+      display: -webkit-box;
+      -webkit-line-clamp: $line;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+  }
+}

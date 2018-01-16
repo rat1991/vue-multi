@@ -1,0 +1,10 @@
+// 适配多倍屏的 CSS 选择器
+// @support css-media-resolution
+@mixin screenResolution($num) {
+  @media (-webkit-min-device-pixel-ratio: $num),
+    (min-device-pixel-ratio: $num),
+    (min-resolution: #{$num}dppx),
+    (min-resolution: #{$num*96}dpi) {
+      @content; 
+  }
+}

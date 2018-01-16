@@ -1,0 +1,26 @@
+[class^="sp"], [class*=" sp"] {
+    display: inline-block;
+    background-image: url(/sprites/sprite.png);
+    background-repeat:no-repeat;
+    background-size: 1.3333333333333333rem, 1.3333333333333333rem;
+  }
+.sp-b01 {
+      width: 0.64rem;
+      height: 0.64rem;
+      background-position: 0rem 0rem;
+    }
+.sp-b02 {
+      width: 0.64rem;
+      height: 0.64rem;
+      background-position: -0.6933333333333334rem 0rem;
+    }
+.sp-b03 {
+      width: 0.64rem;
+      height: 0.64rem;
+      background-position: 0rem -0.6933333333333334rem;
+    }
+.sp-b04 {
+      width: 0.64rem;
+      height: 0.64rem;
+      background-position: -0.6933333333333334rem -0.6933333333333334rem;
+    }

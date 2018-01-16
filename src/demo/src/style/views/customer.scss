@@ -1,0 +1,12 @@
+@charset "UTF-8";
+@import "../style/common";
+// SWIPER VARIABLES
+// ------------------------------------------->
+
+// SWIPER COMPONENT
+// ============================================>
+.index-menu{
+  &__list{
+    margin-top: torem(40px);
+  }
+}
