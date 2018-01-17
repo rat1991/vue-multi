@@ -2,10 +2,11 @@
 // Template version: 1.2.7
 // see http://vuejs-templates.github.io/webpack for documentation.
 
-const path = require('path')
-
-// 项目名称
+/*========项目名称=========*/ 
 const projectName = 'demo'
+/*=========END===========*/ 
+
+const path = require('path')
 
 function resolve(_dir) {
   return path.join(__dirname, '../src', projectName, _dir)

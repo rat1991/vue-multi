@@ -1,21 +1,22 @@
-# vue-multi-page
+# 基于vue-cli的多页面脚手架
+### 除了拥有原先vue-cli提供的模块打包和vue单文件解析外；主要增加
+> 根据页面入口生成多个页面和多个页面chunks
+> 自动对项目slice文件夹下的*.png文件自动生成多张雪碧图
 
-> a vue multi page  project
-
-## Build Setup
+## 开发
 
 ``` bash
-# install dependencies
+# 安装依赖模块
 npm install
 
-# serve with hot reload at localhost:8080
+# 创建默认模版项目
+# 并修改根目录下config/index.js; 设置projectName变量值为新创建的项目名称
+node create -n [项目名称]
+
+# 执行开发 localhost:3000
 npm run dev
 
-# build for production with minification
+# 执行构建
 npm run build
 
-# build for production and view the bundle analyzer report
-npm run build --report
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
