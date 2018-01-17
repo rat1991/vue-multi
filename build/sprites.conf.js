@@ -1,11 +1,12 @@
 
 'use strict'
-const fs = require('fs')
 const path = require('path')
+const fs = require('fs')
 const config = require('../config')
 const SpritesmithPlugin = require('webpack-spritesmith');
 
 function assetsPath (_path) {
+  _path = _path || ''
   const assetsRoot = process.env.NODE_ENV === 'production'
     ? config.build.assetsRoot
     : config.dev.assetsRoot

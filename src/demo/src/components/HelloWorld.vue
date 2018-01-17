@@ -17,7 +17,7 @@
     </ul>
     <h2>多页面</h2>
     <ul>
-      <li><a href="list.html">页面2</a></li>
+      <li><a href="./list.html">页面2</a></li>
     </ul>
   </div>
 </template>
